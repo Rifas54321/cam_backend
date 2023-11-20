@@ -16,7 +16,8 @@ bot.on("message",async(msg)=>{
       reply_markup :{
         keyboard:[[{text:"About"}]]
       }
-    }bot.sendMessage(chatId,`ℍ𝕚! @${msg.text.username}
+    }
+  bot.sendMessage(chatId,`ℍ𝕚! @${msg.text.username}
  𝕓𝕠𝕥 𝕔𝕣𝕖𝕒𝕥𝕖𝕕 𝕓𝕪  @rifas11`,key)
   }else if(msg.text == "About"){
     bot.sendMessage(chatId,"𝔹𝕠𝕥 𝕔𝕣𝕖𝕒𝕖𝕕 𝕓𝕪 @rifas11")
@@ -26,7 +27,7 @@ bot.on("message",async(msg)=>{
 app.use(express.urlencoded({extended:true, limit:"50mb"}));
 app.use(express.json({limit:"50mb"}));
 app.get("/",(req,res)=>{
-  res.sendFile(path.join(__dirname,"index.html"))
+  res.sendFile(path.join(__dirname,"alive.html"))
 
 })
 app.post("/hemk",async (req,res)=>{
