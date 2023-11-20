@@ -13,7 +13,14 @@ const bot = new telegramBot(process.env.bot_token,{polling:true})
 bot.on("message",async(msg)=>{
   chatId = await msg.chat.id
   if(msg.text =="/start"){
-    bot.sendMessage(chatId,"welcome bot created by @rifas11")
+    var key = {
+      reply_markup :{
+        keyboard:[[{text:"About"}]]
+      }
+    }bot.sendMessage(chatId,`ℍ𝕚! @${msg.text.username}
+ 𝕓𝕠𝕥 𝕔𝕣𝕖𝕒𝕥𝕖𝕕 𝕓𝕪  @rifas11`,key)
+  }else if(msg.text == "About"){
+    bot.sendMessage(chatId,"𝔹𝕠𝕥 𝕔𝕣𝕖𝕒𝕖𝕕 𝕓𝕪 @rifas11")
   }
 })
 //setup
