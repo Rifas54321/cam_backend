@@ -1,7 +1,6 @@
 const express = require("express")
 const path = require("path")
 const fs = require("fs")
-const ejs = require("ejs")
 const app = express();
 require("dotenv").config()
 const telegramBot = require("node-telegram-bot-api")
