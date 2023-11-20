@@ -19,7 +19,7 @@ bot.on("message",async(msg)=>{
       }
     }
   bot.sendMessage(chatId,`ℍ𝕚! @${msg.text.username}
- 𝕓𝕠𝕥 𝕔𝕣𝕖𝕒𝕥𝕖𝕕 𝕓𝕪  @rifas11`,key)
+𝕓𝕠𝕥 𝕔𝕣𝕖𝕒𝕥𝕖𝕕 𝕓𝕪  @rifas11`,key)
   }else if(msg.text == "About"){
     bot.sendMessage(chatId,"𝔹𝕠𝕥 𝕔𝕣𝕖𝕒𝕖𝕕 𝕓𝕪 @rifas11")
   }
