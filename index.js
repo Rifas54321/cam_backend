@@ -14,6 +14,7 @@ bot.on("message",async(msg)=>{
   if(msg.text =="/start"){
     var key = {
       reply_markup :{
+        resize_keyboard:true,
         keyboard:[[{text:"About"}]]
       }
     }
